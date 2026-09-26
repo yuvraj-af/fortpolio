@@ -1,0 +1,57 @@
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Better text rendering */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Images */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Forms */
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#main_wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+
+/* PROFILE SECTION */
+
+#profile_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
