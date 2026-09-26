@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
     <title>fortpolio</title>
 
     <link rel="stylesheet" href="style.css">
@@ -13,8 +18,10 @@
 <body>
     <div id="main_wrapper">
 
-        <header">
-            <div id="header_wrapper">
+        <p id="header_line" class="text-xs font-italic-normal">The header at the extreme top didn't look good to me.</p>
+
+        <header>
+            <div id="header_wrapper" class="text-l">
                 <ul>
                     <li>About</li>
                     <li>Projects</li>
@@ -23,32 +30,51 @@
                     <li>Contact</li>
                 </ul>
             </div>
-            </header>
+        </header>
 
-            <main>
+        <main>
 
-                <section id="profile">
-                    <div id="profile_wrapper">
+            <section id="profile">
+                <div id="profile_wrapper">
 
-                        <div id="info">
-                            
-                        </div>
+                    <div id="info">
+                        <p class="text-l">Hello, I'm</p>
+                        <p class="text-3xl font-normal">Yuvraj Singh Tomar</p>
+                        <p class="text-xl font-normal">Database Admin, Aspiring Developer</p>
 
+                        <p>This is a portfolio website. It is a work in progress. I'm not sure when this will be
+                            finished or will it ever be. I'd like to showcase my projects here (which are 0
+                            currently). I'd like to keep this website very simple. It won't use any frontend
+                            framework or CSS library. I wanna keep it Vanilla.</p>
+                    </div>
+
+                    <div id="pfp_links_wrapper">
                         <div id="profile_img_wrapper">
                             <img id="profile_picture" src="./assets/images/sketchy.jpg" alt="Profile Picture">
                         </div>
 
+                        <div id="social_links_wrapper">
+                            <ul class="font-bold">
+                                <li> <a target="_blank" href="https://www.linkedin.com/in/sketchy/">LinkedIn</li>
+                                <li> <a target="_blank" href="https://github.com/yuvraj-af">GitHub</li>
+                                <!-- <li> <a target="_blank" href="">Discord</li> -->
+                                <li> <a target="_blank" href="https://steamcommunity.com/profiles/76561199105751534/">Steam</li>
+                                <li> <a target="_blank" href="https://open.spotify.com/user/31lpczvqnsewbfgbrodqmsaicnmy?si=c65ca31a1f314dcd">Spotify</li>`
+                            </ul>
+                        </div>
                     </div>
 
+                </div>
 
 
-                </section>
 
-            </main>
+            </section>
 
-            <footer>
-                Footer hehe.
-            </footer>
+        </main>
+
+        <footer>
+            Footer hehe.
+        </footer>
 
     </div>
 

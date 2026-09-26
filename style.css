@@ -15,7 +15,8 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    color: aliceblue;
+    font-family: 'Cantarell', sans-serif;
+    color: var(--text);
 }
 
 /* Images */
@@ -43,7 +44,7 @@ a {
 }
 
 #main_wrapper {
-    max-width: 1256px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -57,6 +58,16 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* -- RESET DONE --  */
+
+:root {
+    --bg: #17151f;
+    --surface: #2a2638;
+    --primary: #8b64d4;
+    --primary-hover: #9b78df;
+    --text: #f5f3ff;
+    --text-muted: #b8b3c9;
+    --border: #393348;
+}
 
 
 /* -- SOME UTILITY CLASSES */
@@ -97,16 +108,40 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 5rem;
 }
 
+
+/* Font Weight */
+
+
 .font-normal {
     font-weight: 400;
 }
 
-.font-medium {
-    font-weight: 500;
-}
-
 .font-bold {
     font-weight: 700;
+}
+
+.font-italic-normal {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.font-italic-bold {
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+/* Line Height */
+.leading-tight {
+    line-height: 1.1;
+}
+
+.leading-normal {
+    line-height: 1.5;
+}
+
+.leading-relaxed {
+    line-height: 1.75;
 }
 
 
@@ -117,22 +152,28 @@ h1, h2, h3, h4, h5, h6 {
 /* BODY */
  body {
     margin: 0;
-    background-color: #3b3355;
+    background-color: var(--bg);
 }
 
 #main_wrapper {
-    background-color: #5d5d81;
+    background-color: var(--surface);
 }
 
 /* HEADER SECTION */
 
+#header_line {
+    padding-top: 16px;
+    margin-bottom: 12px;
+}
+
 #header_wrapper ul {
     /* padding: 20px; */
     display: flex;
-    gap: 5px;
+    gap: 4px;
     list-style: none;
     justify-content: space-around;
-    background-color: #3b3355;
+    background-color: var(--bg);
+    margin-bottom: 24px;
 
 }
 
@@ -140,8 +181,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 0;
     width:100%;
     text-align: center;
-    background-color: #6247aa;
+    background-color: var(--primary);
     cursor: pointer;
+}
+
+#header_wrapper ul li:hover {
+    background-color: var(--primary-hover);
 }
 
 
@@ -149,11 +194,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #profile_wrapper {
     display: flex;
-    justify-content: space-between;
+    gap: 48px;
+    /* justify-content: space-between; */
+}
+
+#pfp_links_wrapper {
+    flex-shrink: 0;
 }
 
 #profile_picture {
-    width: 150px;
-    height: 150px;
+    width: 204px;
+    height: 204px;
     border-radius: 2%;
+}
+
+#social_links_wrapper ul li {
+    list-style: none;
+    margin: 8px;
+    cursor: pointer;
 }
