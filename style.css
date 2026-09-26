@@ -15,6 +15,7 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    color: aliceblue;
 }
 
 /* Images */
@@ -42,11 +43,106 @@ a {
 }
 
 #main_wrapper {
-    max-width: 1280px;
+    max-width: 1256px;
     margin: 0 auto;
+    padding: 0 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 
+/* -- RESET DONE --  */
+
+
+/* -- SOME UTILITY CLASSES */
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.text-s {
+    font-size: 0.875rem;
+}
+
+.text-m {
+    font-size: 1rem;
+}
+
+.text-l {
+    font-size: 1.25rem;
+}
+
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.text-2xl {
+    font-size: 2rem;
+}
+
+.text-3xl {
+    font-size: 3rem;
+}
+
+.text-4xl {
+    font-size: 4rem;
+}
+
+.text-5xl {
+    font-size: 5rem;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+
+/* -- UTILITY CLASSES END */
+
+
+
+/* BODY */
+ body {
+    margin: 0;
+    background-color: #3b3355;
+}
+
+#main_wrapper {
+    background-color: #5d5d81;
+}
+
+/* HEADER SECTION */
+
+#header_wrapper ul {
+    /* padding: 20px; */
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    justify-content: space-around;
+    background-color: #3b3355;
+
+}
+
+#header_wrapper ul li {
+    padding: 20px 0;
+    width:100%;
+    text-align: center;
+    background-color: #6247aa;
+    cursor: pointer;
+}
 
 
 /* PROFILE SECTION */
@@ -54,4 +150,10 @@ a {
 #profile_wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+#profile_picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 2%;
 }
